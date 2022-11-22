@@ -1,0 +1,26 @@
+package com.demo.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.demo.bean.Student;
+import com.demo.bean.StudentMap;
+import com.demo.dao.StudentDao;
+
+@Controller
+public class StudentController {
+	@Autowired
+	StudentDao dao;
+	
+	@GetMapping("/student/index")
+	public String index(Model model) {
+		Student student = new Student("", "", 0.0, true, "VN");
+		model.addAttribute("form", student);
+		StudentMap map = dao.findAll();
+		model.addAttribute("items", map);
+		return "student/index";
+	}
+	
+}

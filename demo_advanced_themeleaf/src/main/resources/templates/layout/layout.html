@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	th:fragment="dynamic(view)">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<header>
+		<img alt="" th:src="@{/image/15.jpg}" style="width: 150px;">
+	</header>
+	<hr>
+	<nav th:insert="~{layout/_menu.html::navbar}"></nav>
+	<main th:replace="${view}"></main>
+</body>
+</html>

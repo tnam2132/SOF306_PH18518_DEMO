@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head xmlns:th="http://www.thymeleaf.org">
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form th:object="${form}" method="post">
+		<input th:field="">
+	</form>
+</body>
+</html>

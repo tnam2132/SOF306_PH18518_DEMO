@@ -1,0 +1,13 @@
+INDEX VERSION 1.4+D:\Java6\BaiLab\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1957618458.index
+38961190.index
+1518458815.index
+2010273890.index
+2728096617.index
+4090080045.index
+3802331729.index
+3473711332.index
+1997880556.index
+1038323383.index
+3939001191.index
+3477207622.index

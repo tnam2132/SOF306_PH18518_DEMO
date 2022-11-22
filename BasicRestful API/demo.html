@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+
+<body ng-app="app" ng-controller="ctrl">
+    <h2>Restful Consumer - angularjs</h2>
+    <!-- form -->
+    <div>
+        <input ng-model="form.email" placeholder="Email Address">
+        <input ng-model="form.fullname" placeholder="Fullname">
+        <input ng-model="form.mark" placeholder="Mark">
+        <input ng-model="form.gender" ng-value="true" type="radio">Male
+        <input ng-model="form.gender" ng-value="false"  type="radio">Female
+        <select ng-model="form.country">
+            <option value="VN">Viet Nam</option>
+            <option value="EN">USA</option>
+        </select>
+        <hr>
+        <button ng-click="create()">Create</button>
+        <button ng-click="update()">Update</button>
+        <button ng-click="delete(key)">Delete</button>
+        <button ng-click="reset()">Reset</button>
+    </div>
+    <!-- table -->
+    <table>
+        <tr>
+            <th>Email Address</th>
+            <th>Fullname</th>
+            <th>Mark</th>
+            <th>Gender</th>
+            <th>Country</th>
+            <th>AA</th>
+        </tr>
+        <tr ng-repeat="(key, stu) in items">
+            <td>{{stu.email}}</td>
+            <td>{{stu.fullname}}</td>
+            <td>{{stu.mark}}</td>
+            <td>{{stu.gender?'Male':'Famale'}}</td>
+            <td>{{stu.country}}</td> 
+            <td>
+                <button ng-click="edit(key)">Edit</button>
+                <button ng-click="delete(key)">Del</button>
+            </td>
+        </tr>
+    </table>
+    <script src="demo-ctrl.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+package com.demo.dao;
+
+import org.springframework.stereotype.Repository;
+import org.springframework.web.client.RestTemplate;
+
+@Repository
+public class StudentDao {
+	RestTemplate template = new RestTemplate();
+	String url = "https://databasentn-1212-default-rtdb.firebaseio.com/\r\n"
+			+ "students.json";
+	
+	private String getUrl(String key) {
+		return url.replace(".json", "/" + key + ".json");
+	}
+}

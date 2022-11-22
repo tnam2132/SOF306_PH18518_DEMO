@@ -1,0 +1,27 @@
+[
+	{
+		"name": "Nam1",
+		"gender": true,
+		"mark": 7.5,
+		"email": "teonv@gmail.com"
+	},
+	{
+		"name": "nguyễn thành Nam2",
+		"gender": false,
+		"mark": 2.0,
+		"email": "teonv@gmail.com"
+		
+	},
+	{
+		"name": "vũ văn Nam3",
+		"gender": true,
+		"mark": 3,
+		"email": "teonv@gmail.com"
+	},
+	{
+		"name": "Nam4",
+		"gender": false,
+		"mark": 7.5,
+		"email": "teonv@gmail.com"
+	}
+]

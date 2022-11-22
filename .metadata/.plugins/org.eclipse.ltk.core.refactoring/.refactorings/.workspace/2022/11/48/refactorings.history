@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;demo_basic_restful_api-1&apos;" deleteContents="true" description="Delete resource &apos;demo_basic_restful_api-1&apos;" element1="/demo_basic_restful_api-1" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1669116855307"/>&#x0A;<refactoring comment="Rename resource &apos;demo-java6-b5&apos; to &apos;demo-advanced_rest_api&apos;" description="Rename resource &apos;demo-java6-b5&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/demo-java6-b5" name="demo-advanced_rest_api" stamp="1669125696304" updateReferences="true"/>
+</session>
